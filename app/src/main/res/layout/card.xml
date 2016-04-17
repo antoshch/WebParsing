@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="4dp"
+    style="@style/CardView.Dark">
+
+    <RelativeLayout
+        android:id="@+id/articleLayout"
+        android:background="@color/primary_bgr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/stgvImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/siteurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stgvImageView"
+            android:layout_alignRight="@+id/stgvImageView"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/stgvImageView"
+            android:layout_alignTop="@+id/stgvImageView"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:clickable="false" />
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stgvImageView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/articleTitle"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                style="@style/Base.TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="10sp" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/button0"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:src="@drawable/ic_share"
+                app:cb_color="@color/primary_bgr"
+                android:clickable="true"
+                android:layout_gravity="right" />
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="8dp"-->
+                <!--android:paddingBottom="16dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/authorLayout"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_alignParentStart="false"-->
+                    <!--android:clickable="true"-->
+                    <!--android:baselineAligned="false">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/userAva"-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:background="#f8f8f8"-->
+                        <!--android:layout_marginRight="8dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/userFullname"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:textColor="@color/gray_text"-->
+                        <!--android:ellipsize="end"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textAppearance="@android:style/TextAppearance.Small"/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<at.markushi.ui.CircleButton-->
+                <!--android:id="@+id/comments"-->
+                <!--android:layout_width="@android:dimen/app_icon_size"-->
+                <!--android:layout_height="@android:dimen/app_icon_size"-->
+                <!--android:src="@drawable/ic_insert_comment"-->
+                <!--app:cb_color="@color/primary_bgr"-->
+                <!--android:clickable="true"-->
+                <!--android:layout_alignWithParentIfMissing="false"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toLeftOf="@+id/button0"-->
+                <!--android:layout_toStartOf="@+id/button0" />-->
+
+
+            <!--</RelativeLayout>-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

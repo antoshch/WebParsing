@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Fratria</string>
+    <string name="back_message">Нажмите Назад еще раз, чтоюы выйти из приложения</string>
+    <string name="connectError">Проверьте соединение с интернетом и попробуйте снова.</string>
+    <string name="action_settings">Settings</string>
+</resources>

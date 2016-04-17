@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>News</title>
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <style type="text/css">
+        body {
+        max-width: 100%;
+        font-size: 24ps;
+        margin: 0px 0px; padding:0px;
+        margin-bottom: 10px;
+        }
+
+        #base {
+        overflow: hidden;
+        width: 90%;
+        margin:0px auto;
+        }
+
+        #header {
+
+        }
+
+        .title {
+        color: #333;
+        font-size: 20sp;
+        font-family: sans-serif-medium;
+        }
+
+        img, ul, ol {
+        display: block;
+        height:auto;
+        width:100%;
+        margin-top:10px;
+        margin-bottom:4px;
+        }
+
+        .content {
+        <!--word-wrap:break-word;-->
+        text-align: justify !important;
+        font-size: 24ps !important;
+        font-family:sans-serif;
+        color: #333
+        }
+
+        a {
+        color: #468CFF;
+        text-decoration: none;
+        }
+
+        iframe {
+        display: block;
+        max-width:100%;
+        margin-top:10px;
+        margin-bottom:10px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="base">
+    <div id="header">
+        <div class="title">
+            <p>_TITLE_</p>
+        </div>
+    </div>
+    <div class="content">
+        <p>_CONTENT_</p>
+    </div>
+</div>
+</body>
+</html>
